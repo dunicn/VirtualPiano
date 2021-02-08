@@ -526,6 +526,92 @@ files:
         }
     );
   learner_created: false
+- name: src/main.js
+  visible: true
+  text: |2
+
+    document.addEventListener('keypress', function(event) {
+        let keys = ['a', 's', 'd', 'f', 'g', 'h', 'j'];
+
+        if (keys.includes(event.key)){
+            console.log("The '" + event.key.toUpperCase() + "' is pressed.");
+            if (event.code === "KeyA") {
+                new Audio("A.mp3").play();
+            }
+            if (event.code === "KeyS") {
+                new Audio("S.mp3").play();
+            }
+            if (event.code === "KeyD") {
+                new Audio("D.mp3").play();
+            }
+            if (event.code === "KeyF") {
+                new Audio("F.mp3").play();
+            }
+            if (event.code === "KeyG") {
+                new Audio("G.mp3").play();
+            }
+            if (event.code === "KeyH") {
+                new Audio("H.mp3").play();
+            }
+            if (event.code === "KeyJ") {
+                new Audio("J.mp3").play();
+            }
+
+        }
+        else {
+            console.warn("This is a warning!");
+        }
+
+    })
+    // let audioA = new Audio("A.mp3");
+    // let audioS = new Audio("S.mp3");
+    // let audioD = new Audio("D.mp3");
+    // let audioF = new Audio("F.mp3");
+    // let audioG = new Audio("G.mp3");
+    // let audioH = new Audio("H.mp3");
+    // let audioJ = new Audio("J.mp3");
+  learner_created: true
+- name: src/style.css
+  visible: true
+  text: |
+    html{
+        background-color: wheat;
+    }
+
+
+    .container {
+        width: max-content;
+        margin: 15% auto;
+    }
+    kbd{
+        display: inline-block;
+        width: 75px;
+        border: 1px solid black;
+        background-color: white;
+        text-align: center;
+        padding-top: 50%;
+        padding-bottom: 10%;
+
+    }
+  learner_created: true
+- name: src/U.mp3
+  visible: true
+  learner_created: true
+- name: src/E.mp3
+  visible: true
+  learner_created: true
+- name: src/Y.mp3
+  visible: true
+  learner_created: true
+- name: src/T.mp3
+  visible: true
+  learner_created: true
+- name: src/W.mp3
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/101/stages/560/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 08 Feb 2021 10:33:26 UTC
 record: -1
