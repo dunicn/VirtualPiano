@@ -348,6 +348,35 @@ files:
         }
     );
   learner_created: false
+- name: src/style.css
+  visible: true
+  text: |
+    html{
+        background-color: wheat;
+    }
+
+
+    .container {
+        width: max-content;
+        margin: 15% auto;
+    }
+    kbd{
+        display: inline-block;
+        width: 75px;
+        border: 1px solid black;
+        background-color: white;
+        text-align: center;
+        padding-top: 50%;
+        padding-bottom: 10%;
+
+    }
+  learner_created: true
+- name: src/main.js
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/101/stages/558/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Mon, 08 Feb 2021 08:50:57 UTC
 record: -1
